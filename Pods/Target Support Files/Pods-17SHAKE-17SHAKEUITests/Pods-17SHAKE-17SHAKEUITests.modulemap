@@ -1,0 +1,6 @@
+framework module Pods_17SHAKE_17SHAKEUITests {
+  umbrella header "Pods-17SHAKE-17SHAKEUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,6 +12,7 @@ import Metal
 import WebKit
 import SnapKit
 import Kingfisher
+import Alamofire
 
 class SH_HomeController: SH_BaseController {
     
