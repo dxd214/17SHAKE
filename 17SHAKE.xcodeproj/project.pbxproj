@@ -11,7 +11,6 @@
 		264C1274262EA0A800586AFB /* LabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1270262EA0A700586AFB /* LabModel.swift */; };
 		264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1272262EA0A700586AFB /* ControllerTestExtension.swift */; };
 		264C1276262EA0A800586AFB /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1273262EA0A700586AFB /* CustomModel.swift */; };
-		264C127F262EA2C400586AFB /* pinyin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C127E262EA2C400586AFB /* pinyin.ttf */; };
 		264C1284262EA62000586AFB /* kaiti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C1283262EA62000586AFB /* kaiti.ttf */; };
 		264C129C262ECCD500586AFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 264C129B262ECCD500586AFB /* README.md */; };
 		48DD6B523182456E93CAFD9E /* Pods_17SHAKE_17SHAKEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */; };
@@ -61,7 +60,6 @@
 		264C1270262EA0A700586AFB /* LabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabModel.swift; sourceTree = "<group>"; };
 		264C1272262EA0A700586AFB /* ControllerTestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerTestExtension.swift; sourceTree = "<group>"; };
 		264C1273262EA0A700586AFB /* CustomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
-		264C127E262EA2C400586AFB /* pinyin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinyin.ttf; sourceTree = "<group>"; };
 		264C1283262EA62000586AFB /* kaiti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaiti.ttf; sourceTree = "<group>"; };
 		264C129B262ECCD500586AFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		348BC55BEB4A7B23181C6DB8 /* Pods-17SHAKETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKETests.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKETests/Pods-17SHAKETests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				264C1283262EA62000586AFB /* kaiti.ttf */,
-				264C127E262EA2C400586AFB /* pinyin.ttf */,
 				264C1272262EA0A700586AFB /* ControllerTestExtension.swift */,
 			);
 			path = Font;
@@ -560,7 +557,6 @@
 				264C129C262ECCD500586AFB /* README.md in Resources */,
 				F286021E262DCA320002B0ED /* Main.storyboard in Resources */,
 				264C1284262EA62000586AFB /* kaiti.ttf in Resources */,
-				264C127F262EA2C400586AFB /* pinyin.ttf in Resources */,
 				F286021C262DCA320002B0ED /* Assets.xcassets in Resources */,
 				F286021D262DCA320002B0ED /* LaunchScreen.storyboard in Resources */,
 			);
