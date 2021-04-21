@@ -24,8 +24,44 @@ class SH_HomeController: SH_BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupView()
+//        self.setupView()
+//        self.printFontFamily()
+//        self.testArray()
+//        testMap()
         
+        
+        let p = P()
+        p[index:0] = 100
+        print(p[index:0])
+        
+        print(p[10,20])
+    }
+    
+    class P {
+        var x = 0, y = 0
+        
+        subscript(v1:Int, v2:Int) -> Int {
+            return v1 + v2
+        }
+        
+        
+        subscript(index index:Int) -> Int {
+            set {
+                if (index == 0) {
+                    x = newValue
+                }else if index == 1 {
+                    y = newValue
+                }
+            }
+            get {
+                if (index == 0) {
+                    return x
+                }else if index == 1 {
+                    return y
+                }
+                return 0
+            }
+        }
     }
     
     func setupView(){
@@ -99,8 +135,6 @@ class SH_HomeController: SH_BaseController {
        return v1 + v2
     }
     
-//    let exec2 = { $0 + $1 }
-    
     func testSth() {
         //        self.printPropertyList()
         
@@ -142,13 +176,6 @@ class SH_HomeController: SH_BaseController {
         }
     }
     
-    /// 测试图片缓存
-    func testImageCache() {
-//        let imgView = UIImageView()
-//        imgView.kf.setImage(with: <#T##Resource?#>)
-    }
-    
-    
     func testNetwork(){
         
         let urlStr = "http://www.baidu.com".urlEncode()
@@ -166,14 +193,7 @@ class SH_HomeController: SH_BaseController {
             let request = URLRequest(url: url)
             self.webView.load(request)
         })
-        
-        
-       
-        
-        
     }
-    
-    
     
     func testFucntion(cal first:Int, second:Int) -> Int{
         first + second
@@ -202,93 +222,4 @@ class SH_HomeController: SH_BaseController {
         
         return addNewMenu
     }
-    
-    
-    // 打印属性列表
-    func printPropertyList(){
-        var count:UInt32 = 0
-        
-        let properties = class_copyPropertyList(UIPageControl.self, &count)
-        //        print(properties!)
-    }
-    
-    //    - (void)printPropertyList {
-    //        unsigned int count;
-    //
-    //        objc_property_t *propertyList = class_copyPropertyList([self class], &count);
-    //        for (unsigned int i = 0; i < count; i++) {
-    //            const char *propertyName = property_getName(propertyList[i]);
-    //            NSLog(@"propertyName(%d) : %@", i, [NSString stringWithUTF8String:propertyName]);
-    //        }
-    //
-    //        free(propertyList);
-    //    }
-    
-    //    func test(){
-    //        let a = ["1","2","3"]
-    //        a.forEach { print("输出\($0)")
-    //        }
-    //    }
-    
-    
 }
-
-
-//extension SH_HomeController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-//        10
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-//        let cell = tableView .dequeueReusableCell(withIdentifier: SH_HomeController.cellIdentifier, for: indexPath)
-//        cell.textLabel?.text = "\(indexPath.row)"
-//        return cell
-//    }
-//}
-//
-//extension SH_HomeController: UITableViewDelegate {
-//
-//}
-
-/*
- var listView : UITableView? = nil
- static let cellIdentifier : String = "cellIdentifier"
- var testNum = 10
- 
- override func viewDidLoad() {
- super.viewDidLoad()
- 
- self.setupView()
- 
- self.loadCategoryList()
- 
- self.modifyTestNum(&testNum)
- }
- 
- func modifyTestNum(_ num : inout Int){
- print("运算前\(num)")
- num += 5
- print("运算后\(num)")
- 
- let isFlag = num is String
- print("\(isFlag)")
- }
- 
- func loadCategoryList(){
- AF.request(API.home_category).responseJSON{ response in
- //            print(response.value!)
- guard let dict = response.value else { return }
- print(dict)
- 
- }
- }
- 
- func setupView(){
- self.navigationItem.title = sh_tab_home.localizedString
- self.listView = UITableView(frame: self.view.bounds, style: .plain)
- self.listView?.dataSource = self;
- self.listView?.delegate = self;
- self.listView?.register(UITableViewCell.self, forCellReuseIdentifier: SH_HomeController.cellIdentifier)
- self.view.addSubview(self.listView!)
- }
- */

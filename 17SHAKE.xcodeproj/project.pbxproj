@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2126431DF05BDBD59866B526 /* Pods_17SHAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */; };
+		264C1274262EA0A800586AFB /* LabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1270262EA0A700586AFB /* LabModel.swift */; };
+		264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1272262EA0A700586AFB /* ControllerTestExtension.swift */; };
+		264C1276262EA0A800586AFB /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1273262EA0A700586AFB /* CustomModel.swift */; };
+		264C127F262EA2C400586AFB /* pinyin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C127E262EA2C400586AFB /* pinyin.ttf */; };
+		264C1284262EA62000586AFB /* kaiti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C1283262EA62000586AFB /* kaiti.ttf */; };
+		264C129C262ECCD500586AFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 264C129B262ECCD500586AFB /* README.md */; };
 		48DD6B523182456E93CAFD9E /* Pods_17SHAKE_17SHAKEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */; };
 		DC35B11FE5B0B6D80FDABC7D /* Pods_17SHAKETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */; };
 		F28601CC262DC7D20002B0ED /* _7SHAKETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601CB262DC7D20002B0ED /* _7SHAKETests.swift */; };
@@ -18,7 +24,7 @@
 		F286021C262DCA320002B0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28601F4262DCA320002B0ED /* Assets.xcassets */; };
 		F286021D262DCA320002B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28601F5262DCA320002B0ED /* LaunchScreen.storyboard */; };
 		F286021E262DCA320002B0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28601F7262DCA320002B0ED /* Main.storyboard */; };
-		F2860220262DCA320002B0ED /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601FB262DCA320002B0ED /* Extension.swift */; };
+		F2860220262DCA320002B0ED /* FoudationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601FB262DCA320002B0ED /* FoudationExtension.swift */; };
 		F2860221262DCA320002B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601FE262DCA320002B0ED /* AppDelegate.swift */; };
 		F2860222262DCA320002B0ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601FF262DCA320002B0ED /* SceneDelegate.swift */; };
 		F2860223262DCA320002B0ED /* SH_TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2860201262DCA320002B0ED /* SH_TabBarController.swift */; };
@@ -52,6 +58,12 @@
 
 /* Begin PBXFileReference section */
 		1370008A44F76154B1D18C86 /* Pods-17SHAKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKE/Pods-17SHAKE.debug.xcconfig"; sourceTree = "<group>"; };
+		264C1270262EA0A700586AFB /* LabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabModel.swift; sourceTree = "<group>"; };
+		264C1272262EA0A700586AFB /* ControllerTestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerTestExtension.swift; sourceTree = "<group>"; };
+		264C1273262EA0A700586AFB /* CustomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
+		264C127E262EA2C400586AFB /* pinyin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinyin.ttf; sourceTree = "<group>"; };
+		264C1283262EA62000586AFB /* kaiti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaiti.ttf; sourceTree = "<group>"; };
+		264C129B262ECCD500586AFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		348BC55BEB4A7B23181C6DB8 /* Pods-17SHAKETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKETests.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKETests/Pods-17SHAKETests.debug.xcconfig"; sourceTree = "<group>"; };
 		595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_17SHAKETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_17SHAKE_17SHAKEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +86,7 @@
 		F28601F6262DCA320002B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F28601F8262DCA320002B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F28601F9262DCA320002B0ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F28601FB262DCA320002B0ED /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F28601FB262DCA320002B0ED /* FoudationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoudationExtension.swift; sourceTree = "<group>"; };
 		F28601FE262DCA320002B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F28601FF262DCA320002B0ED /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2860201262DCA320002B0ED /* SH_TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_TabBarController.swift; sourceTree = "<group>"; };
@@ -125,6 +137,42 @@
 				595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		264C126F262EA0A700586AFB /* Lab */ = {
+			isa = PBXGroup;
+			children = (
+				264C1270262EA0A700586AFB /* LabModel.swift */,
+				264C1273262EA0A700586AFB /* CustomModel.swift */,
+				264C1271262EA0A700586AFB /* System */,
+			);
+			path = Lab;
+			sourceTree = "<group>";
+		};
+		264C1271262EA0A700586AFB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				264C127D262EA2A200586AFB /* Font */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		264C127D262EA2A200586AFB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				264C1283262EA62000586AFB /* kaiti.ttf */,
+				264C127E262EA2C400586AFB /* pinyin.ttf */,
+				264C1272262EA0A700586AFB /* ControllerTestExtension.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		264C129A262ECCBE00586AFB /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				264C129B262ECCD500586AFB /* README.md */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 		A0C52E4F4E69F5EA2CC8325D /* Pods */ = {
@@ -197,6 +245,8 @@
 		F28601EA262DCA320002B0ED /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				264C129A262ECCBE00586AFB /* Note */,
+				264C126F262EA0A700586AFB /* Lab */,
 				F28601EB262DCA320002B0ED /* Protocol */,
 			);
 			path = Learning;
@@ -248,7 +298,7 @@
 		F28601FA262DCA320002B0ED /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				F28601FB262DCA320002B0ED /* Extension.swift */,
+				F28601FB262DCA320002B0ED /* FoudationExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -507,7 +557,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264C129C262ECCD500586AFB /* README.md in Resources */,
 				F286021E262DCA320002B0ED /* Main.storyboard in Resources */,
+				264C1284262EA62000586AFB /* kaiti.ttf in Resources */,
+				264C127F262EA2C400586AFB /* pinyin.ttf in Resources */,
 				F286021C262DCA320002B0ED /* Assets.xcassets in Resources */,
 				F286021D262DCA320002B0ED /* LaunchScreen.storyboard in Resources */,
 			);
@@ -642,14 +695,17 @@
 				F286021B262DCA320002B0ED /* Constant.swift in Sources */,
 				F2860221262DCA320002B0ED /* AppDelegate.swift in Sources */,
 				F286022C262DCA320002B0ED /* SH_ProfileController.swift in Sources */,
-				F2860220262DCA320002B0ED /* Extension.swift in Sources */,
+				F2860220262DCA320002B0ED /* FoudationExtension.swift in Sources */,
 				F2860226262DCA320002B0ED /* SH_BaseController.swift in Sources */,
+				264C1276262EA0A800586AFB /* CustomModel.swift in Sources */,
+				264C1274262EA0A800586AFB /* LabModel.swift in Sources */,
 				F2860227262DCA320002B0ED /* BaseRequest.swift in Sources */,
 				F286022B262DCA320002B0ED /* SH_CommentController.swift in Sources */,
 				F2860222262DCA320002B0ED /* SceneDelegate.swift in Sources */,
 				F2860229262DCA320002B0ED /* ViewController.swift in Sources */,
 				F2860224262DCA320002B0ED /* SH_NavigationController.swift in Sources */,
 				F2860228262DCA320002B0ED /* SH_HomeController.swift in Sources */,
+				264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */,
 				F2860225262DCA320002B0ED /* API.swift in Sources */,
 				F2860223262DCA320002B0ED /* SH_TabBarController.swift in Sources */,
 				F286022A262DCA320002B0ED /* SH_DiscoverController.swift in Sources */,
