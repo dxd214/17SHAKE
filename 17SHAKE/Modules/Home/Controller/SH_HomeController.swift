@@ -29,39 +29,19 @@ class SH_HomeController: SH_BaseController {
 //        self.testArray()
 //        testMap()
         
+        testKeyWord()
         
-        let p = P()
-        p[index:0] = 100
-        print(p[index:0])
-        
-        print(p[10,20])
     }
     
-    class P {
-        var x = 0, y = 0
+    func testKeyWord(){
+//        let p = P()
+//        p[index:0] = 100
+//        print(p[index:0])
+//        print(p[10,20])
         
-        subscript(v1:Int, v2:Int) -> Int {
-            return v1 + v2
-        }
-        
-        
-        subscript(index index:Int) -> Int {
-            set {
-                if (index == 0) {
-                    x = newValue
-                }else if index == 1 {
-                    y = newValue
-                }
-            }
-            get {
-                if (index == 0) {
-                    return x
-                }else if index == 1 {
-                    return y
-                }
-                return 0
-            }
-        }
+        let pk = PK()
+        pk.test()
+        pk.testReturnValue()
     }
     
     func setupView(){
