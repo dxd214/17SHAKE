@@ -25,6 +25,12 @@ import UIKit
     case female
 }
 
+enum ESize {
+    case large
+    case medium
+    case small
+}
+
 
 // 5、oc与swift混合开发
 class People: NSObject {

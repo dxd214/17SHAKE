@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.4.2)
+  - Alamofire (5.4.3)
   - Kingfisher (5.13.4):
     - Kingfisher/Core (= 5.13.4)
   - Kingfisher/Core (5.13.4)
@@ -26,7 +26,7 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4

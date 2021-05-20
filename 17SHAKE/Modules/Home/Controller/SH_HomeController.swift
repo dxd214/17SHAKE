@@ -33,6 +33,8 @@ class SH_HomeController: SH_BaseController {
         
     }
     
+    
+    
     func testKeyWord(){
 //        let p = P()
 //        p[index:0] = 100
@@ -42,6 +44,11 @@ class SH_HomeController: SH_BaseController {
         let pk = PK()
         pk.test()
         pk.testReturnValue()
+        
+//        print(Sex.male.rawValue)
+//        print(ESize.large)
+        
+        print(CustomObj(name: "hello") == CustomObj(name: "hello"))
     }
     
     func setupView(){

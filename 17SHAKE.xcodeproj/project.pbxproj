@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5D36D0264CA7A600ED198A /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D36CF264CA7A600ED198A /* Type.swift */; };
 		2126431DF05BDBD59866B526 /* Pods_17SHAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */; };
 		264C1274262EA0A800586AFB /* LabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1270262EA0A700586AFB /* LabModel.swift */; };
 		264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1272262EA0A700586AFB /* ControllerTestExtension.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		1370008A44F76154B1D18C86 /* Pods-17SHAKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKE/Pods-17SHAKE.debug.xcconfig"; sourceTree = "<group>"; };
+		1D5D36CF264CA7A600ED198A /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		264C1270262EA0A700586AFB /* LabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabModel.swift; sourceTree = "<group>"; };
 		264C1272262EA0A700586AFB /* ControllerTestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerTestExtension.swift; sourceTree = "<group>"; };
 		264C1273262EA0A700586AFB /* CustomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
@@ -141,9 +143,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1D5D36CE264CA77600ED198A /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D36CF264CA7A600ED198A /* Type.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 		264C126F262EA0A700586AFB /* Lab */ = {
 			isa = PBXGroup;
 			children = (
+				1D5D36CE264CA77600ED198A /* Type */,
 				26C7D7872631A5CC009863FC /* Initialize */,
 				26C7D77E26318F21009863FC /* KeyWord */,
 				264C1270262EA0A700586AFB /* LabModel.swift */,
@@ -713,6 +724,7 @@
 				F286021B262DCA320002B0ED /* Constant.swift in Sources */,
 				F2860221262DCA320002B0ED /* AppDelegate.swift in Sources */,
 				F286022C262DCA320002B0ED /* SH_ProfileController.swift in Sources */,
+				1D5D36D0264CA7A600ED198A /* Type.swift in Sources */,
 				26C7D78026318F37009863FC /* KeyWord.swift in Sources */,
 				F2860220262DCA320002B0ED /* FoudationExtension.swift in Sources */,
 				F2860226262DCA320002B0ED /* SH_BaseController.swift in Sources */,
