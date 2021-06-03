@@ -58,3 +58,27 @@ class P {
         print("-=-=-=-")
     }
 }
+
+
+// 访问级别
+// private  当前类中可以访问
+// fileprivate (当前文件内都可以访问)
+// internal (默认类或者成员变量、方法的访问级别)
+// public
+// open
+
+class PP {
+    
+    fileprivate let name : String = ""
+    
+    internal func run() {
+        
+    }
+}
+
+class p1 : PP {
+    override func run() {
+        let pp1 = PP()
+        print(pp1.name)
+    }
+}

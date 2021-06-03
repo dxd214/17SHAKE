@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0637EF2667ACC2003FD014 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0637EE2667ACC2003FD014 /* Common.swift */; };
 		1D5D36D0264CA7A600ED198A /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D36CF264CA7A600ED198A /* Type.swift */; };
 		2126431DF05BDBD59866B526 /* Pods_17SHAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */; };
 		264C1274262EA0A800586AFB /* LabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1270262EA0A700586AFB /* LabModel.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		1370008A44F76154B1D18C86 /* Pods-17SHAKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKE/Pods-17SHAKE.debug.xcconfig"; sourceTree = "<group>"; };
+		1D0637EE2667ACC2003FD014 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		1D5D36CF264CA7A600ED198A /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		264C1270262EA0A700586AFB /* LabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabModel.swift; sourceTree = "<group>"; };
 		264C1272262EA0A700586AFB /* ControllerTestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerTestExtension.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				F28601F2262DCA320002B0ED /* Constant.swift */,
+				1D0637EE2667ACC2003FD014 /* Common.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				F286022B262DCA320002B0ED /* SH_CommentController.swift in Sources */,
 				F2860222262DCA320002B0ED /* SceneDelegate.swift in Sources */,
 				F2860229262DCA320002B0ED /* ViewController.swift in Sources */,
+				1D0637EF2667ACC2003FD014 /* Common.swift in Sources */,
 				F2860224262DCA320002B0ED /* SH_NavigationController.swift in Sources */,
 				F2860228262DCA320002B0ED /* SH_HomeController.swift in Sources */,
 				264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */,

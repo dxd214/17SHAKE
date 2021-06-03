@@ -83,3 +83,27 @@ protocol CusProtocol {
     
     func modify()
 }
+
+
+typealias Func = () ->()
+
+func other1(_ fn:Func) {
+    fn()
+}
+
+func other2(_ fn: @escaping Func) {
+    fn()
+}
+
+
+func test(_ value: inout Int) {
+    other1 {
+        value += 1
+    }
+    
+    //  Error: Escaping closure captures 'inout' parameter 'value'
+//    other2 {
+//        value += 2
+//    }
+}
+

@@ -51,6 +51,10 @@ class SSize : ISize {
         self.init(width:0, height:0, name:"")
     }
     
+    func modifyName(_ delta: String ) {
+        self.name += delta
+    }
+    
     deinit {
         
     }
@@ -60,12 +64,17 @@ class SSize : ISize {
 
 let s = SSize(width: 10, height: 10, name: "size")
 
-struct Rect {
+struct Rect1 {
     var width : Int
     var height : Int
+    
+    // 默认情况下，实例方法中是不可以修改值类型的属性，使用mutating后可修改属性的值
+    mutating func modifySize(_ delta: Int ) {
+        self.width += delta
+    }
 }
 
-let rect = Rect(width: 20, height: 20)
+let rect = Rect1(width: 20, height: 20)
 
 
 /*

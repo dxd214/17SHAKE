@@ -21,18 +21,58 @@ class SH_HomeController: SH_BaseController {
     
     lazy var webView : WKWebView = WKWebView()
     
+    var step = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         
+        // for循环
+        for i in 0...100 {
+            print(i)
+        }
         
-//        self.setupView()
-//        self.printFontFamily()
-//        self.testArray()
-//        testMap()
-        
-        testKeyWord()
-        
+//        increment(&step)
+    }
+    /*
+     内存访问冲突会在两个访问满足下列条件时发生：
+     1> 至少一个是写入操作
+     2> 它们访问的是同一块内存
+     3> 它们的访问时间重叠（比如在同一个函数）
+     
+     同时访问同一块结构体的内存也会冲突
+     */
+    // Simultaneous accesses to 0x7fe3bd4058a0, but modification requires exclusive access
+    func increment(_ num: inout Int) {
+        num += step
     }
     
+    
+    
+    
+    /*
+     指针类型， Unsafe ，常见的4种指针类型
+     UnsafePointer<Pointee> 类似于 const Pointee *
+     UnsafeMutablePointer<Pointee> 类似于 Pointee *
+     UnsafeRawPointer 类似于 const void *
+     UnsafeMutableRawPointer 类似于 void *
+     */
+    func testPointee(_ ptr: UnsafeMutablePointer<Int>){
+        ptr.pointee = 10
+    }
+    
+    func testPointee1(_ ptr: UnsafePointer<Int>){
+        print(ptr.pointee)
+    }
+    
+    func testPointee2(_ ptr: UnsafeRawPointer){
+//        ptr.pointee = 10
+        print(ptr.load(as: Int.self))
+    }
+    
+    func testPointee3(_ ptr: UnsafeMutableRawPointer){
+//        ptr.pointee = 10
+        ptr.storeBytes(of: 30, as: Int.self)
+    }
     
     
     func testKeyWord(){
@@ -49,6 +89,15 @@ class SH_HomeController: SH_BaseController {
 //        print(ESize.large)
         
         print(CustomObj(name: "hello") == CustomObj(name: "hello"))
+        
+        let str = "123123123123"
+        
+        let a = 10
+        let b = 11
+        let c = 12
+        let res = a + b + c
+        
+        
     }
     
     func setupView(){
