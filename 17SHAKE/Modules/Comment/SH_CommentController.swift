@@ -19,7 +19,7 @@ class SH_CommentController: SH_BaseController {
     }
     
     func setupView(){
-        self.navigationItem.title = sh_tab_discover.localizedString
+        self.navigationItem.title = sh_tab_comment.localizedString
     }
     /*
     // MARK: - Navigation

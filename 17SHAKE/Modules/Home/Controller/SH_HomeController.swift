@@ -25,6 +25,8 @@ class SH_HomeController: SH_BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.view.backgroundColor = UIColor.init(named: "theme")
          
         // for循环
         for i in 0...100 {
@@ -32,6 +34,11 @@ class SH_HomeController: SH_BaseController {
         }
         
 //        increment(&step)
+        
+        var dic:Dictionary = [String:Any]()
+        dic["123"] = false
+        print(dic["123"] ?? "sss")
+        
     }
     /*
      内存访问冲突会在两个访问满足下列条件时发生：

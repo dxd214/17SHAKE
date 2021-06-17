@@ -19,8 +19,9 @@ class SH_BaseController: UIViewController {
     }
     
     func initialView(){
-//        self.navigationItem.title = "Home"
         self.view.backgroundColor = .white
+        
+        self.navigationController?.navigationBar.isTranslucent = false
     }
 
 }

@@ -14,6 +14,7 @@ target '17SHAKE' do
   pod 'MJRefresh', '~> 3.3.1'   # 刷新
   pod 'SwiftyJSON', '~> 5.0.0'  # json解析
   pod 'Kingfisher', '~> 5.13.2' # 图片缓存
+  pod 'CTMediator'              # 组件化
   
   #  pod 'SAMKeychain', '~> 1.5.3'   #keychain(OC)
   

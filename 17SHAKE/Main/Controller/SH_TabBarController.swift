@@ -20,6 +20,9 @@ class SH_TabBarController: UITabBarController {
         let comment = self.setUpChildController(SH_CommentController(), title: sh_tab_comment.localizedString, norIcon: "bm_order_nor", selIcon: "bm_order_sel")
         let profile = self.setUpChildController(SH_ProfileController(), title: sh_tab_profile.localizedString, norIcon: "bm_profile_nor", selIcon: "bm_profile_sel")
         self.viewControllers = [home, discover, comment, profile]
+        
+        self.selectedIndex = 3
+        
     }
     
     func setUpChildController(_ controller:UIViewController, title: String, norIcon:String, selIcon:String) -> SH_NavigationController{
@@ -38,16 +41,4 @@ class SH_TabBarController: UITabBarController {
         
         return navigationController;
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
