@@ -15,6 +15,8 @@ class SH_AboutController: SH_BaseController {
     
     let textfiled = UITextField()
     
+    var titleStr: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,11 +63,21 @@ class SH_AboutController: SH_BaseController {
         
         textfiled.rx.text.subscribe { ( str: String?) in
             print("输入文本：\(str ?? "")")
+            self.titleStr = str
         }
         
         textfiled.rx.text.bind(to:label.rx.text)
         
-        btn.rx
+//        self.rx.observe(String.self, "titleStr").subscribe { (value) in
+//            print("value:\(value)")
+//        }
+        
+        textfiled.rx.controlEvent(.editingDidEndOnExit).subscribe { [weak self] (_) in
+            print("退出编辑")
+            self?.textfiled.resignFirstResponder()
+        }
+
+
     }
     
 }
