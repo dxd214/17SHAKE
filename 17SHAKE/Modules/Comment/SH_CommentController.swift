@@ -21,14 +21,5 @@ class SH_CommentController: SH_BaseController {
     func setupView(){
         self.navigationItem.title = sh_tab_comment.localizedString
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

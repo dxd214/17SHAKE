@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B31D09FDC026EC0FCEBDE8 /* libPods-17SHAKE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */; };
 		1D0637EF2667ACC2003FD014 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0637EE2667ACC2003FD014 /* Common.swift */; };
 		1D5D36D0264CA7A600ED198A /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D36CF264CA7A600ED198A /* Type.swift */; };
-		2126431DF05BDBD59866B526 /* Pods_17SHAKE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */; };
 		264C1274262EA0A800586AFB /* LabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1270262EA0A700586AFB /* LabModel.swift */; };
 		264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1272262EA0A700586AFB /* ControllerTestExtension.swift */; };
 		264C1276262EA0A800586AFB /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264C1273262EA0A700586AFB /* CustomModel.swift */; };
@@ -17,8 +17,7 @@
 		264C129C262ECCD500586AFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 264C129B262ECCD500586AFB /* README.md */; };
 		26C7D78026318F37009863FC /* KeyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C7D77F26318F37009863FC /* KeyWord.swift */; };
 		26C7D7892631A5EC009863FC /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C7D7882631A5EC009863FC /* Initializer.swift */; };
-		48DD6B523182456E93CAFD9E /* Pods_17SHAKE_17SHAKEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */; };
-		DC35B11FE5B0B6D80FDABC7D /* Pods_17SHAKETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */; };
+		96F5A493708134A200FBDE76 /* libPods-17SHAKE-17SHAKEUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4C1E38944C120542309216 /* libPods-17SHAKE-17SHAKEUITests.a */; };
 		F28601CC262DC7D20002B0ED /* _7SHAKETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601CB262DC7D20002B0ED /* _7SHAKETests.swift */; };
 		F28601D7262DC7D20002B0ED /* _7SHAKEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601D6262DC7D20002B0ED /* _7SHAKEUITests.swift */; };
 		F2860219262DCA320002B0ED /* LProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28601EC262DCA320002B0ED /* LProtocol.swift */; };
@@ -43,10 +42,11 @@
 		F64F057526784F5E009F788B /* LightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F057426784F5E009F788B /* LightController.swift */; };
 		F651EF2F2671B72F0072ECFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF312671B72F0072ECFA /* InfoPlist.strings */; };
 		F651EF3E2671B7D00072ECFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF402671B7D00072ECFA /* Localizable.strings */; };
+		F68646F1267B688900522DB3 /* SHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68646F0267B688900522DB3 /* SHTabBar.swift */; };
 		F6E418F02671FF0300AE9D4C /* SH_TreasureBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */; };
 		F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */; };
 		F6E418FF2671FF5600AE9D4C /* SH_AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */; };
-		F6EF66F826733BA200CD9C83 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EF66F726733BA200CD9C83 /* Test.m */; };
+		FB14E37954254583C7350836 /* libPods-17SHAKETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4C1E38944C120542309216 /* libPods-17SHAKE-17SHAKEUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-17SHAKE-17SHAKEUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1370008A44F76154B1D18C86 /* Pods-17SHAKE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKE/Pods-17SHAKE.debug.xcconfig"; sourceTree = "<group>"; };
 		1D0637EE2667ACC2003FD014 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		1D5D36CF264CA7A600ED198A /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -78,13 +79,11 @@
 		26C7D77F26318F37009863FC /* KeyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWord.swift; sourceTree = "<group>"; };
 		26C7D7882631A5EC009863FC /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 		348BC55BEB4A7B23181C6DB8 /* Pods-17SHAKETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKETests.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKETests/Pods-17SHAKETests.debug.xcconfig"; sourceTree = "<group>"; };
-		595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_17SHAKETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_17SHAKE_17SHAKEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF28FA9549FAA354A9697117 /* Pods-17SHAKETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKETests.release.xcconfig"; path = "Target Support Files/Pods-17SHAKETests/Pods-17SHAKETests.release.xcconfig"; sourceTree = "<group>"; };
 		CF4AEB298DE4EDDBBDFB27DA /* Pods-17SHAKE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE.release.xcconfig"; path = "Target Support Files/Pods-17SHAKE/Pods-17SHAKE.release.xcconfig"; sourceTree = "<group>"; };
 		D76B8F30D29330B14BEB242D /* Pods-17SHAKE-17SHAKEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE-17SHAKEUITests.release.xcconfig"; path = "Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-17SHAKETests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F8D9DD7A07ECAE10187D5D /* Pods-17SHAKE-17SHAKEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-17SHAKE-17SHAKEUITests.debug.xcconfig"; path = "Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_17SHAKE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28601B1262DC7D00002B0ED /* 17SHAKE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 17SHAKE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28601C7262DC7D20002B0ED /* 17SHAKETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 17SHAKETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28601CB262DC7D20002B0ED /* _7SHAKETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7SHAKETests.swift; sourceTree = "<group>"; };
@@ -117,12 +116,13 @@
 		F651EF352671B7590072ECFA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F651EF3F2671B7D00072ECFA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F651EF442671B7D80072ECFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F68646F0267B688900522DB3 /* SHTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTabBar.swift; sourceTree = "<group>"; };
+		F686475A267C2D6100522DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-17SHAKE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_TreasureBoxController.swift; sourceTree = "<group>"; };
 		F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_SettingController.swift; sourceTree = "<group>"; };
 		F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_AboutController.swift; sourceTree = "<group>"; };
 		F6EF66F526733BA200CD9C83 /* 17SHAKE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "17SHAKE-Bridging-Header.h"; sourceTree = "<group>"; };
-		F6EF66F626733BA200CD9C83 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		F6EF66F726733BA200CD9C83 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2126431DF05BDBD59866B526 /* Pods_17SHAKE.framework in Frameworks */,
+				18B31D09FDC026EC0FCEBDE8 /* libPods-17SHAKE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC35B11FE5B0B6D80FDABC7D /* Pods_17SHAKETests.framework in Frameworks */,
+				FB14E37954254583C7350836 /* libPods-17SHAKETests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48DD6B523182456E93CAFD9E /* Pods_17SHAKE_17SHAKEUITests.framework in Frameworks */,
+				96F5A493708134A200FBDE76 /* libPods-17SHAKE-17SHAKEUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +156,9 @@
 		11A04648FD2B4BC1C924BB45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F153230CF727A9CCBBA78A41 /* Pods_17SHAKE.framework */,
-				A676A7EA3F3ADAB320F88AC9 /* Pods_17SHAKE_17SHAKEUITests.framework */,
-				595E1A544172A6F075108BCE /* Pods_17SHAKETests.framework */,
+				F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */,
+				0C4C1E38944C120542309216 /* libPods-17SHAKE-17SHAKEUITests.a */,
+				DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,8 +360,8 @@
 		F28601FC262DCA320002B0ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F68646EF267B5F4E00522DB3 /* Main */,
 				F28601FD262DCA320002B0ED /* Delegate */,
-				F2860200262DCA320002B0ED /* Controller */,
 				F2860203262DCA320002B0ED /* API */,
 				F2860205262DCA320002B0ED /* Base */,
 			);
@@ -514,6 +514,23 @@
 			path = Light;
 			sourceTree = "<group>";
 		};
+		F68646EB267B5F2A00522DB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F68646F0267B688900522DB3 /* SHTabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F68646EF267B5F4E00522DB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2860200262DCA320002B0ED /* Controller */,
+				F68646EB267B5F2A00522DB3 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F6E418EE2671FF0300AE9D4C /* TreasureBox */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,8 +559,6 @@
 		F6EF66F426733B7C00CD9C83 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				F6EF66F626733BA200CD9C83 /* Test.h */,
-				F6EF66F726733BA200CD9C83 /* Test.m */,
 				F6EF66F526733BA200CD9C83 /* 17SHAKE-Bridging-Header.h */,
 			);
 			path = Bridge;
@@ -560,7 +575,7 @@
 				F28601AD262DC7D00002B0ED /* Sources */,
 				F28601AE262DC7D00002B0ED /* Frameworks */,
 				F28601AF262DC7D00002B0ED /* Resources */,
-				A0E5149BE40972F73876EC1E /* [CP] Embed Pods Frameworks */,
+				5CFAAB4B2F6BF87766452742 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -598,7 +613,7 @@
 				F28601CE262DC7D20002B0ED /* Sources */,
 				F28601CF262DC7D20002B0ED /* Frameworks */,
 				F28601D0262DC7D20002B0ED /* Resources */,
-				C08FE6A61CDE83FDF7661DE3 /* [CP] Embed Pods Frameworks */,
+				168D04EA2DB2BE0339878156 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -686,6 +701,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		168D04EA2DB2BE0339878156 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2CDC5EEF0614BEECD5D79439 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,6 +738,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CFAAB4B2F6BF87766452742 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		68B87B2393DE2AC6DC85C431 /* [CP] Check Pods Manifest.lock */ = {
@@ -752,40 +801,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0E5149BE40972F73876EC1E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-17SHAKE/Pods-17SHAKE-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C08FE6A61CDE83FDF7661DE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-17SHAKE-17SHAKEUITests/Pods-17SHAKE-17SHAKEUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -815,9 +830,9 @@
 				F2860229262DCA320002B0ED /* ViewController.swift in Sources */,
 				1D0637EF2667ACC2003FD014 /* Common.swift in Sources */,
 				F2860224262DCA320002B0ED /* SH_NavigationController.swift in Sources */,
-				F6EF66F826733BA200CD9C83 /* Test.m in Sources */,
 				F2860228262DCA320002B0ED /* SH_HomeController.swift in Sources */,
 				264C1275262EA0A800586AFB /* ControllerTestExtension.swift in Sources */,
+				F68646F1267B688900522DB3 /* SHTabBar.swift in Sources */,
 				F2860225262DCA320002B0ED /* API.swift in Sources */,
 				F2860223262DCA320002B0ED /* SH_TabBarController.swift in Sources */,
 				F286022A262DCA320002B0ED /* SH_DiscoverController.swift in Sources */,
@@ -868,6 +883,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F28601F8262DCA320002B0ED /* Base */,
+				F686475A267C2D6100522DB3 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

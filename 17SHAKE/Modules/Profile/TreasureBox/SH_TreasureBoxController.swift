@@ -6,18 +6,18 @@
 //
 
 import UIKit
-import RxSwift
+import RxCocoa
 
 class SH_TreasureBoxController: SH_BaseController {
 
+    var selectedIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "百宝箱"
         
         self.setupView()
-        
-//        test()
     }
     
     func setupView() {
@@ -30,6 +30,13 @@ class SH_TreasureBoxController: SH_BaseController {
         self.view.addSubview(firstStackView)
         
         let netTestBtn = createBtn("网速检测")
+        netTestBtn.rx.tap.subscribe { (onNext) in
+            print("--网速检测--")
+        }
+        
+        netTestBtn.rx.controlEvent(.touchUpOutside)
+         
+
         firstStackView.addArrangedSubview(netTestBtn)
         
         let lightBtn = createBtn("闪光灯")
@@ -43,6 +50,8 @@ class SH_TreasureBoxController: SH_BaseController {
             maker.top.left.right.equalTo(self.view)
             maker.height.equalTo(kScreenWidth/3)
         }
+        
+        
     }
     
     /// mark: 闪光灯

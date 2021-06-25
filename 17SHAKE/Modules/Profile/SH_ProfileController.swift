@@ -65,7 +65,9 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
             self.navigationController?.pushViewController(SH_SettingController(), animated: true)
             
         case 2:
-            self.navigationController?.pushViewController(SH_TreasureBoxController(), animated: true)
+            let treasureVC = SH_TreasureBoxController()
+            treasureVC.selectedIndex = 1
+            self.navigationController?.pushViewController(treasureVC, animated: true)
             
         default:
             break;

@@ -16,75 +16,117 @@ class LightController: SH_BaseController {
         return timer
     }()
     
-    lazy var captureSession = AVCaptureSession()
-    lazy var captureDevice = AVCaptureDevice.default(for: .video)
-    var count: Int = 0
+    var captureSession = AVCaptureSession()
+    var captureDevice = AVCaptureDevice.default(for: .video)
+    
+    var lightness: Float = 1.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MBProgressHUD.bwm_showTitle("灯光准备就绪", to: self.view, hideAfter: 3)
  
         setupView()
         
+        var tup = [Int]()
+        tup.append(10)
+        print(type(of: tup))
+        
+        var dic = [String:Any]()
+        dic["h"] = "Hello"
+        
     }
     
+    // mark: 手电筒闪烁（闪光灯）
     @objc func startCount(){
-        count += 1
-        print(count)
-        
-        guard let _ = (captureDevice?.isTorchModeSupported(AVCaptureDevice.TorchMode.on) ?? false) else {
-            return
+        do {
+            try captureDevice?.lockForConfiguration()
+            // 设置手电筒亮度
+            try captureDevice?.setTorchModeOn(level: lightness)
+        } catch  {
+            MBProgressHUD.bwm_showTitle("lock异常", to: self.view, hideAfter: 3)
         }
         
+        if ((captureDevice?.hasFlash) != nil) {
+            if captureDevice?.torchMode == .off {
+                turnOnCaptureDevice()
+            }else {
+                turnOffCaptureDevice()
+            }
+        }else {
+            MBProgressHUD.bwm_showTitle("当前设备不支持手电筒", to: self.view, hideAfter: 3)
+        }
+    }
+    
+    // MARK: 打开手电筒
+    func turnOnCaptureDevice(){
         if captureDevice?.torchMode == .off {
             captureDevice?.torchMode = .on
-            if #available(iOS 11.0, *){
-                
-            }else {
-                
-            }
-            captureDevice?.flashMode = .on
-            
-        }else {
+            captureDevice?.unlockForConfiguration()
+        }
+    }
+    
+    // MARK: 关闭手电筒
+    func turnOffCaptureDevice(){
+        if captureDevice?.torchMode == .on {
             captureDevice?.torchMode = .off
-            captureDevice?.flashMode = .off
+            captureDevice?.unlockForConfiguration()
         }
-        
-        captureDevice?.unlockForConfiguration()
-        captureSession.commitConfiguration()
-        
-        if captureDevice?.torchMode == .off {
-            captureSession.startRunning()
-        }else {
-            captureSession.stopRunning()
-        }
-        
     }
     
     func setupView(){
+        
+        let lightLabel = UILabel()
+        self.view.addSubview(lightLabel)
+        lightLabel.text = "闪光灯开关："
+        
+        lightLabel.snp.makeConstraints { (maker) in
+            maker.top.left.equalTo(30)
+            maker.width.equalTo(180)
+            maker.height.equalTo(30)
+        }
         
         let lightSwitch = UISwitch()
         self.view.addSubview(lightSwitch)
         lightSwitch.addTarget(self, action: #selector(switchLight(_:)), for: .valueChanged)
         
         lightSwitch.snp.makeConstraints { (maker) in
-            maker.center.equalTo(self.view)
+            maker.centerY.equalTo(lightLabel)
+            maker.width.equalTo(100)
+            maker.left.equalTo(lightLabel.snp_rightMargin).offset(10)
         }
         
-        self.timer.fireDate = Date.distantFuture
+        let lightnessLabel = UILabel()
+        self.view.addSubview(lightnessLabel)
+        lightnessLabel.text = "亮度调整："
+        
+        lightnessLabel.snp.makeConstraints { (maker) in
+            maker.top.equalTo(lightLabel.snp_bottomMargin).offset(20)
+            maker.left.height.width.equalTo(lightLabel)
+        }
+        
+        let lightnessSlider = UISlider()
+        lightnessSlider.value = lightness
+        self.view.addSubview(lightnessSlider)
+        lightnessSlider.minimumValue = 0.1
+        lightnessSlider.maximumValue = 1
+        lightnessSlider.addTarget(self, action: #selector(changeLightness(_:)), for: .valueChanged)
+        lightnessSlider.snp.makeConstraints { (maker) in
+            maker.centerY.equalTo(lightnessLabel)
+            maker.left.width.equalTo(lightSwitch)
+        }
     }
     
     @objc func switchLight(_ sender:UISwitch){
-        sender.isOn ? openFlash():closeFlash()
+        if (sender.isOn){
+            timer.fireDate = Date.distantPast
+        }else {
+            timer.fireDate = Date.distantFuture
+            turnOffCaptureDevice()
+        }
     }
     
-    func openFlash(){
-        timer.fireDate = Date.distantPast
+    @objc func changeLightness(_ sender:UISlider){
+        lightness = sender.value
     }
-    
-    func closeFlash(){
-        timer.fireDate = Date.distantFuture
-    }
-    
-    
-
 }
