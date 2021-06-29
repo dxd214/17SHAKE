@@ -43,6 +43,7 @@
 		F651EF2F2671B72F0072ECFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF312671B72F0072ECFA /* InfoPlist.strings */; };
 		F651EF3E2671B7D00072ECFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF402671B7D00072ECFA /* Localizable.strings */; };
 		F68646F1267B688900522DB3 /* SHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68646F0267B688900522DB3 /* SHTabBar.swift */; };
+		F68F44532689B09800F6264B /* SHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F44522689B09800F6264B /* SHError.swift */; };
 		F6E418F02671FF0300AE9D4C /* SH_TreasureBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */; };
 		F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */; };
 		F6E418FF2671FF5600AE9D4C /* SH_AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */; };
@@ -119,6 +120,7 @@
 		F68646F0267B688900522DB3 /* SHTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTabBar.swift; sourceTree = "<group>"; };
 		F686475A267C2D6100522DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-17SHAKE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68F44522689B09800F6264B /* SHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHError.swift; sourceTree = "<group>"; };
 		F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_TreasureBoxController.swift; sourceTree = "<group>"; };
 		F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_SettingController.swift; sourceTree = "<group>"; };
 		F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_AboutController.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				F28601FB262DCA320002B0ED /* FoudationExtension.swift */,
+				F68F44522689B09800F6264B /* SHError.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -397,8 +400,8 @@
 		F2860205262DCA320002B0ED /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F68F44512689B07300F6264B /* Model */,
 				F2860206262DCA320002B0ED /* Controller */,
-				F2860208262DCA320002B0ED /* Model */,
 				F2860209262DCA320002B0ED /* View */,
 				F286020A262DCA320002B0ED /* Request */,
 			);
@@ -411,13 +414,6 @@
 				F2860207262DCA320002B0ED /* SH_BaseController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F2860208262DCA320002B0ED /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F2860209262DCA320002B0ED /* View */ = {
@@ -529,6 +525,13 @@
 				F68646EB267B5F2A00522DB3 /* View */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F68F44512689B07300F6264B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F6E418EE2671FF0300AE9D4C /* TreasureBox */ = {
@@ -826,6 +829,7 @@
 				264C1274262EA0A800586AFB /* LabModel.swift in Sources */,
 				F2860227262DCA320002B0ED /* BaseRequest.swift in Sources */,
 				F286022B262DCA320002B0ED /* SH_CommentController.swift in Sources */,
+				F68F44532689B09800F6264B /* SHError.swift in Sources */,
 				F2860222262DCA320002B0ED /* SceneDelegate.swift in Sources */,
 				F2860229262DCA320002B0ED /* ViewController.swift in Sources */,
 				1D0637EF2667ACC2003FD014 /* Common.swift in Sources */,
