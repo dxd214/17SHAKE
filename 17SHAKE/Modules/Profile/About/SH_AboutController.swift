@@ -17,6 +17,8 @@ class SH_AboutController: SH_BaseController {
     
     var titleStr: String?
     
+    fileprivate lazy var disposableBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,26 +26,65 @@ class SH_AboutController: SH_BaseController {
 //
 //        testObservable()
         
-        testBlock()
+//        testObservable1()
+        
+        testSubjects()
+        
     }
     
-    func testBlock(){
-//        let  myClosure = { [unowned self] in
-//            print("---\(self.titleStr)--")
-//            DispatchQueue.global().asyncAfter(deadline: .now()+2, execute: {
-//                print("\(self.titleStr)")
-//            })
-//        }
-//
-//        myClosure()
+    func testSubjects(){
         
-//        self.view.rx.ob
+        /*
+         PublishSubject 订阅者只能接收订阅之后发出的事件
+         */
+        let publishSub = PublishSubject<String>()
         
-        NSError
+        publishSub.onNext("publish-subject")
         
-        let arr = [1,2,3,4,5]
-        let arr2 = arr.filter({ $0 >= 2 }).map({ $0 * 2 })
-        print("arr2:\(arr2)")
+        publishSub.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        
+        publishSub.onCompleted()
+    }
+    
+    func testObservable1() {
+        print("------------never------------")
+        let neverO = Observable<String>.never()
+        neverO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        print("------------empty------------")
+        let emptyO = Observable<String>.empty()
+        emptyO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        print("------------just------------")
+        let justO = Observable<String>.just("123")
+        justO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        print("------------of------------")
+        let ofO = Observable<String>.of("1","2","3")
+        ofO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        print("------------from------------")
+        let fromO = Observable<String>.from(["a","b","c"])
+        fromO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
+        
+        print("------------myJust------------")
+        let myJustO = myJustObserver(element: "abs")
+        myJustO.subscribe { (event:Event<String>) in
+            print(event)
+        }.disposed(by: disposableBag)
     }
     
     func testObservable() {
@@ -94,6 +135,10 @@ class SH_AboutController: SH_BaseController {
     }
     
     func testCombine(){
+        
+        let arr = [1,2,3,4,5]
+        let arr2 = arr.filter({ $0 >= 2 }).map({ $0 * 2 })
+        print("arr2:\(arr2)")
         
         btn.setTitle("按钮", for: .normal)
         btn.setTitleColor(.black, for: .normal)
@@ -158,4 +203,28 @@ class SH_AboutController: SH_BaseController {
         }
     }
     
+}
+
+
+extension SH_AboutController {
+    fileprivate func createObserver() -> Observable<Any> {
+        return Observable.create { ( observer: AnyObserver<Any>) -> Disposable in
+            observer.onNext("-=-=-=-=-=-=-=")
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
+    
+    fileprivate func myJustObserver(element: String) -> Observable<String> {
+        
+        /*
+         Observable 让别人订阅事件
+         Observer   发出事件
+         */
+        return Observable.create { ( observer: AnyObserver<String>) -> Disposable in
+            observer.onNext(element)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
 }
