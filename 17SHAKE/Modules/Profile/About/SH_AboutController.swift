@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Combine
 
 class SH_AboutController: SH_BaseController {
 
@@ -22,14 +23,53 @@ class SH_AboutController: SH_BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        testCombine()
+//        testUIControlEvent()
 //
 //        testObservable()
         
 //        testObservable1()
         
-        testSubjects()
+//        testSubjects()
         
+        testCombine()
+        
+        let s = "ABC".lowercased()
+        
+        let addTwo = addTo(2)(6)
+//        let result = addTwo(6)
+        print(addTwo)
+        
+        let res = add(addNum: 6, adder: 2)
+        print(res)
+    }
+    
+    func add(addNum addNum: Int, adder: Int) -> Int {
+        return addNum + adder
+    }
+    
+    func addTo(_ adder: Int) -> (Int) -> Int {
+        return {
+            num in
+            print("--\(num)--")
+            return num + adder
+        }
+    }
+    
+    func testCombine(){
+        print("*****startWith*****")
+        /*
+         startWith
+         在开始从可观察源发出元素之前，发出指定的元素序列
+         */
+        Observable.of("1","2","3")
+            .startWith("A")
+            .startWith("abc")
+            .subscribe { (str:String) in
+                print("str:\(str)")
+            } onDisposed: {
+                print("---onDisposed---")
+            }.disposed(by: disposableBag)
+
     }
     
     func testSubjects(){
@@ -134,7 +174,7 @@ class SH_AboutController: SH_BaseController {
         }
     }
     
-    func testCombine(){
+    func testUIControlEvent(){
         
         let arr = [1,2,3,4,5]
         let arr2 = arr.filter({ $0 >= 2 }).map({ $0 * 2 })

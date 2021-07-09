@@ -44,9 +44,13 @@
 		F651EF3E2671B7D00072ECFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF402671B7D00072ECFA /* Localizable.strings */; };
 		F68646F1267B688900522DB3 /* SHTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68646F0267B688900522DB3 /* SHTabBar.swift */; };
 		F68F44532689B09800F6264B /* SHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F44522689B09800F6264B /* SHError.swift */; };
+		F69699D62695DB83002DA96F /* QCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69699D52695DB83002DA96F /* QCodeController.swift */; };
+		F69699D82695DBC1002DA96F /* HViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69699D72695DBC1002DA96F /* HViewModel.swift */; };
+		F69699DA2695DC51002DA96F /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69699D92695DC51002DA96F /* Hero.swift */; };
 		F6E418F02671FF0300AE9D4C /* SH_TreasureBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */; };
 		F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */; };
 		F6E418FF2671FF5600AE9D4C /* SH_AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */; };
+		F6F028302697D5C700D492C5 /* SHLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0282F2697D5C700D492C5 /* SHLoginController.swift */; };
 		FB14E37954254583C7350836 /* libPods-17SHAKETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */; };
 /* End PBXBuildFile section */
 
@@ -121,10 +125,14 @@
 		F686475A267C2D6100522DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-17SHAKE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68F44522689B09800F6264B /* SHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHError.swift; sourceTree = "<group>"; };
+		F69699D52695DB83002DA96F /* QCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeController.swift; sourceTree = "<group>"; };
+		F69699D72695DBC1002DA96F /* HViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HViewModel.swift; sourceTree = "<group>"; };
+		F69699D92695DC51002DA96F /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_TreasureBoxController.swift; sourceTree = "<group>"; };
 		F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_SettingController.swift; sourceTree = "<group>"; };
 		F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_AboutController.swift; sourceTree = "<group>"; };
 		F6EF66F526733BA200CD9C83 /* 17SHAKE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "17SHAKE-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6F0282F2697D5C700D492C5 /* SHLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHLoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,7 +502,8 @@
 		F2860217262DCA320002B0ED /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F2860218262DCA320002B0ED /* SH_ProfileController.swift */,
+				F6F028312697D62B00D492C5 /* Main */,
+				F6F0282E2697D58800D492C5 /* Login */,
 				F6E418F52671FF1000AE9D4C /* About */,
 				F6E418F42671FF0700AE9D4C /* Setting */,
 				F6E418EE2671FF0300AE9D4C /* TreasureBox */,
@@ -534,9 +543,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F69699D42695DB5D002DA96F /* Qcode */ = {
+			isa = PBXGroup;
+			children = (
+				F69699D52695DB83002DA96F /* QCodeController.swift */,
+				F69699D72695DBC1002DA96F /* HViewModel.swift */,
+				F69699D92695DC51002DA96F /* Hero.swift */,
+			);
+			path = Qcode;
+			sourceTree = "<group>";
+		};
 		F6E418EE2671FF0300AE9D4C /* TreasureBox */ = {
 			isa = PBXGroup;
 			children = (
+				F69699D42695DB5D002DA96F /* Qcode */,
 				F64F057326784F34009F788B /* Light */,
 				F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */,
 			);
@@ -565,6 +585,22 @@
 				F6EF66F526733BA200CD9C83 /* 17SHAKE-Bridging-Header.h */,
 			);
 			path = Bridge;
+			sourceTree = "<group>";
+		};
+		F6F0282E2697D58800D492C5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0282F2697D5C700D492C5 /* SHLoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F6F028312697D62B00D492C5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2860218262DCA320002B0ED /* SH_ProfileController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,8 +863,10 @@
 				26C7D7892631A5EC009863FC /* Initializer.swift in Sources */,
 				264C1276262EA0A800586AFB /* CustomModel.swift in Sources */,
 				264C1274262EA0A800586AFB /* LabModel.swift in Sources */,
+				F69699D82695DBC1002DA96F /* HViewModel.swift in Sources */,
 				F2860227262DCA320002B0ED /* BaseRequest.swift in Sources */,
 				F286022B262DCA320002B0ED /* SH_CommentController.swift in Sources */,
+				F69699DA2695DC51002DA96F /* Hero.swift in Sources */,
 				F68F44532689B09800F6264B /* SHError.swift in Sources */,
 				F2860222262DCA320002B0ED /* SceneDelegate.swift in Sources */,
 				F2860229262DCA320002B0ED /* ViewController.swift in Sources */,
@@ -839,6 +877,8 @@
 				F68646F1267B688900522DB3 /* SHTabBar.swift in Sources */,
 				F2860225262DCA320002B0ED /* API.swift in Sources */,
 				F2860223262DCA320002B0ED /* SH_TabBarController.swift in Sources */,
+				F6F028302697D5C700D492C5 /* SHLoginController.swift in Sources */,
+				F69699D62695DB83002DA96F /* QCodeController.swift in Sources */,
 				F286022A262DCA320002B0ED /* SH_DiscoverController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

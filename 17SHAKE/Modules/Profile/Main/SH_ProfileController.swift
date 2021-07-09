@@ -12,7 +12,8 @@ import SnapKit
 class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView(frame: CGRect.zero, style: .grouped)
-    var contents = [["title":"关于","cls":"SH_AboutController"],
+    var contents = [["title":"登录","cls":"SHLoginController"],
+                    ["title":"关于","cls":"SH_AboutController"],
                     ["title":"设置","cls":"SH_SettingController"],
                     ["title":"百宝箱","cls":"SH_TreasureBoxController"]]
     let cellIdentifier = "UITableViewCell"
@@ -56,15 +57,18 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-         
+        
         switch indexPath.row {
         case 0:
-            self.navigationController?.pushViewController(SH_AboutController(), animated: true)
+            self.navigationController?.pushViewController(SHLoginController(), animated: true)
             
         case 1:
-            self.navigationController?.pushViewController(SH_SettingController(), animated: true)
+            self.navigationController?.pushViewController(SH_AboutController(), animated: true)
             
         case 2:
+            self.navigationController?.pushViewController(SH_SettingController(), animated: true)
+            
+        case 3:
             let treasureVC = SH_TreasureBoxController()
             treasureVC.selectedIndex = 1
             self.navigationController?.pushViewController(treasureVC, animated: true)
@@ -72,6 +76,5 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
         default:
             break;
         }
-        
     }
 }

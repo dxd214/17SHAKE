@@ -19,4 +19,15 @@ extension String {
         let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         return encodeUrlString ?? ""
     }
+    
+    func lowercased() -> String {
+//        self.lowercased()
+        return self
+    }
+}
+
+extension String {
+    func originalLowerCased() -> String {
+        return self.lowercased()
+    }
 }

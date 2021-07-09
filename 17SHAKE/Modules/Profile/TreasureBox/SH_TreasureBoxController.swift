@@ -44,6 +44,7 @@ class SH_TreasureBoxController: SH_BaseController {
         firstStackView.addArrangedSubview(lightBtn)
         
         let scanner = createBtn("二维码识别")
+        scanner.addTarget(self, action: #selector(toScan), for: .touchUpInside)
         firstStackView.addArrangedSubview(scanner)
         
         firstStackView.snp.makeConstraints { (maker) in
@@ -57,6 +58,11 @@ class SH_TreasureBoxController: SH_BaseController {
     /// mark: 闪光灯
     @objc func toLight(){
         self.navigationController?.pushViewController(LightController(), animated: true)
+    }
+    
+    /// mark: 二维码
+    @objc func toScan(){
+        self.navigationController?.pushViewController(QCodeController(), animated: true)
     }
     
     func createBtn(_ title:String) -> UIButton {
