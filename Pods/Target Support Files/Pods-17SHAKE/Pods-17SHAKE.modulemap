@@ -1,0 +1,6 @@
+module Pods_17SHAKE {
+  umbrella header "Pods-17SHAKE-umbrella.h"
+
+  export *
+  module * { export * }
+}

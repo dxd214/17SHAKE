@@ -1,0 +1,6 @@
+framework module MBProgressHUD_BWMExtension {
+  umbrella header "MBProgressHUD+BWMExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
