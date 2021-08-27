@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Darwin
 
 class StringRoom {
     func test() {
@@ -222,5 +223,38 @@ class ClosureRoom {
             }
             print("----3")
         }
+    }
+}
+
+class EnumerateRoom {
+    func test() {
+        let arr = [1,2,3,4,5]
+        for (i, o) in arr.enumerated(){
+            print("i:\(i),o:\(o)")
+        }
+        
+        let nsarr: NSArray = [1,2,3,4,5]
+        nsarr.enumerateObjects({(num,index,stop) -> Void in
+            print("index:\(index),num:\(num)")
+            if index == 2 {
+                stop.pointee = true
+            }
+        })
+        
+        let int:Int = 10
+        let intNum: NSNumber = int as NSNumber
+        
+        let float:Float = 10.0
+        let floatNum: NSNumber = float as NSNumber
+        
+        print(String(validatingUTF8: intNum.objCType))
+        
+        
+    }
+}
+
+class EncodeRoom {
+    func test() {
+//        @encode(Int32)
     }
 }

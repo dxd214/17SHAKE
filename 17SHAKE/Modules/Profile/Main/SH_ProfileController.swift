@@ -38,6 +38,9 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
         
         let kvoRoom = KVORoom()
         kvoRoom.test()
+        
+        let enumRoom = EnumerateRoom()
+        enumRoom.test()
     }
     
     func setupView(){
