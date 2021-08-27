@@ -254,7 +254,12 @@ class EnumerateRoom {
 }
 
 class EncodeRoom {
+    
+//    @asmname("test") func c_test(a:Int32) -> Int32
+    @asmname("test") func c_test(a: Int32) -> Int32
+    
     func test() {
 //        @encode(Int32)
+        print(c_test(1))
     }
 }

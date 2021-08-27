@@ -41,6 +41,9 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
         
         let enumRoom = EnumerateRoom()
         enumRoom.test()
+        
+        let encodeRoom = EncodeRoom()
+        encodeRoom.test()
     }
     
     func setupView(){

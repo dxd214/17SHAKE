@@ -39,7 +39,7 @@ class SH_TreasureBoxController: SH_BaseController {
 
         firstStackView.addArrangedSubview(netTestBtn)
         
-        let lightBtn = createBtn("闪光灯")
+        let lightBtn = createBtn("闪光灯")EncodeRoom
         lightBtn.addTarget(self, action: #selector(toLight), for: .touchUpInside)
         firstStackView.addArrangedSubview(lightBtn)
         

@@ -54,6 +54,7 @@
 		F6E418F02671FF0300AE9D4C /* SH_TreasureBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */; };
 		F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */; };
 		F6E418FF2671FF5600AE9D4C /* SH_AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */; };
+		F6EB0C5326D8EF4300B18B48 /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = F6EB0C5226D8EF4300B18B48 /* Test.c */; };
 		F6F028302697D5C700D492C5 /* SHLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0282F2697D5C700D492C5 /* SHLoginController.swift */; };
 		FB14E37954254583C7350836 /* libPods-17SHAKETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,8 @@
 		F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_TreasureBoxController.swift; sourceTree = "<group>"; };
 		F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_SettingController.swift; sourceTree = "<group>"; };
 		F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SH_AboutController.swift; sourceTree = "<group>"; };
+		F6EB0C5126D8EF4300B18B48 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		F6EB0C5226D8EF4300B18B48 /* Test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Test.c; sourceTree = "<group>"; };
 		F6EF66F526733BA200CD9C83 /* 17SHAKE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "17SHAKE-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6F0282F2697D5C700D492C5 /* SHLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHLoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -567,6 +570,8 @@
 			isa = PBXGroup;
 			children = (
 				F6AB9F0C26CE375800EC2848 /* LearningRoom.swift */,
+				F6EB0C5126D8EF4300B18B48 /* Test.h */,
+				F6EB0C5226D8EF4300B18B48 /* Test.c */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -884,6 +889,7 @@
 				F2860226262DCA320002B0ED /* SH_BaseController.swift in Sources */,
 				26C7D7892631A5EC009863FC /* Initializer.swift in Sources */,
 				F6AB9F0D26CE375800EC2848 /* LearningRoom.swift in Sources */,
+				F6EB0C5326D8EF4300B18B48 /* Test.c in Sources */,
 				264C1276262EA0A800586AFB /* CustomModel.swift in Sources */,
 				264C1274262EA0A800586AFB /* LabModel.swift in Sources */,
 				F69699D82695DBC1002DA96F /* HViewModel.swift in Sources */,
