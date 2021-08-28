@@ -32,18 +32,28 @@ class SH_ProfileController: SH_BaseController, UITableViewDataSource, UITableVie
 //        jack!.printName()
 //        jack?.loadBigData()
 //        jack = nil
-        let room = ClosureRoom()
-        room.test()
+        
+//        let room = ClosureRoom()
+//        room.test()
 //        room.isKind(of: GCDRoom.self)
         
-        let kvoRoom = KVORoom()
-        kvoRoom.test()
+//        let kvoRoom = KVORoom()
+//        kvoRoom.test()
+//
+//        let enumRoom = EnumerateRoom()
+//        enumRoom.test()
+//
+//        let encodeRoom = EncodeRoom()
+//        encodeRoom.test()
+//
+//        let initialRoom = InitialRoom()
+//        initialRoom.test()
         
-        let enumRoom = EnumerateRoom()
-        enumRoom.test()
+//        let dRoom = DelegateRoom()
+//        dRoom.method()
         
-        let encodeRoom = EncodeRoom()
-        encodeRoom.test()
+        let associatedRoom = AssociatedTypeRoom()
+        associatedRoom.test()
     }
     
     func setupView(){

@@ -10,6 +10,6 @@
 
 #include <stdio.h>
 
-int test(int a);
+int testCMethod(int a);
 
 #endif /* Test_h */

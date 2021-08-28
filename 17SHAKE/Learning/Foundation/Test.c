@@ -8,6 +8,6 @@
 #include "Test.h"
 
 
-int test(int a){
+int testCMethod(int a){
     return a + 1;
 }

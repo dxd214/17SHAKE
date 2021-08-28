@@ -39,6 +39,7 @@
 		F286022A262DCA320002B0ED /* SH_DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2860214262DCA320002B0ED /* SH_DiscoverController.swift */; };
 		F286022B262DCA320002B0ED /* SH_CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2860216262DCA320002B0ED /* SH_CommentController.swift */; };
 		F286022C262DCA320002B0ED /* SH_ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2860218262DCA320002B0ED /* SH_ProfileController.swift */; };
+		F632905C26D9E20200E520A9 /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = F6EB0C5226D8EF4300B18B48 /* Test.c */; };
 		F64F057526784F5E009F788B /* LightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F057426784F5E009F788B /* LightController.swift */; };
 		F651EF2F2671B72F0072ECFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF312671B72F0072ECFA /* InfoPlist.strings */; };
 		F651EF3E2671B7D00072ECFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F651EF402671B7D00072ECFA /* Localizable.strings */; };
@@ -54,7 +55,6 @@
 		F6E418F02671FF0300AE9D4C /* SH_TreasureBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418EF2671FF0300AE9D4C /* SH_TreasureBoxController.swift */; };
 		F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418F62671FF3E00AE9D4C /* SH_SettingController.swift */; };
 		F6E418FF2671FF5600AE9D4C /* SH_AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E418FE2671FF5600AE9D4C /* SH_AboutController.swift */; };
-		F6EB0C5326D8EF4300B18B48 /* Test.c in Sources */ = {isa = PBXBuildFile; fileRef = F6EB0C5226D8EF4300B18B48 /* Test.c */; };
 		F6F028302697D5C700D492C5 /* SHLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0282F2697D5C700D492C5 /* SHLoginController.swift */; };
 		FB14E37954254583C7350836 /* libPods-17SHAKETests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */; };
 /* End PBXBuildFile section */
@@ -121,6 +121,10 @@
 		F2860214262DCA320002B0ED /* SH_DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_DiscoverController.swift; sourceTree = "<group>"; };
 		F2860216262DCA320002B0ED /* SH_CommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_CommentController.swift; sourceTree = "<group>"; };
 		F2860218262DCA320002B0ED /* SH_ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SH_ProfileController.swift; sourceTree = "<group>"; };
+		F632905D26D9E31400E520A9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F632905F26D9E32600E520A9 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		F632906126D9E33300E520A9 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		F632906326D9E35200E520A9 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		F64F057426784F5E009F788B /* LightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightController.swift; sourceTree = "<group>"; };
 		F651EF302671B72F0072ECFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F651EF352671B7590072ECFA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -177,6 +181,10 @@
 		11A04648FD2B4BC1C924BB45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F632906326D9E35200E520A9 /* libc++abi.tbd */,
+				F632906126D9E33300E520A9 /* libc++.1.tbd */,
+				F632905F26D9E32600E520A9 /* libstdc++.6.0.9.tbd */,
+				F632905D26D9E31400E520A9 /* libc++.tbd */,
 				F68AA9503134B05D8BF8C6EC /* libPods-17SHAKE.a */,
 				0C4C1E38944C120542309216 /* libPods-17SHAKE-17SHAKEUITests.a */,
 				DF71EED0C3BD059E68825598 /* libPods-17SHAKETests.a */,
@@ -873,6 +881,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F632905C26D9E20200E520A9 /* Test.c in Sources */,
 				F286021A262DCA320002B0ED /* KeychainItem.swift in Sources */,
 				F6CC0DD826C6537200BA2895 /* SHUser.swift in Sources */,
 				F6E418F72671FF3E00AE9D4C /* SH_SettingController.swift in Sources */,
@@ -889,7 +898,6 @@
 				F2860226262DCA320002B0ED /* SH_BaseController.swift in Sources */,
 				26C7D7892631A5EC009863FC /* Initializer.swift in Sources */,
 				F6AB9F0D26CE375800EC2848 /* LearningRoom.swift in Sources */,
-				F6EB0C5326D8EF4300B18B48 /* Test.c in Sources */,
 				264C1276262EA0A800586AFB /* CustomModel.swift in Sources */,
 				264C1274262EA0A800586AFB /* LabModel.swift in Sources */,
 				F69699D82695DBC1002DA96F /* HViewModel.swift in Sources */,
@@ -1107,6 +1115,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZ29ULHSK9;
@@ -1131,6 +1140,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZ29ULHSK9;
