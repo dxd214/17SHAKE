@@ -31,3 +31,23 @@ extension String {
         return self.lowercased()
     }
 }
+
+extension Array {
+    subscript(input: [Int]) -> ArraySlice<Element> {
+        get {
+            var result = ArraySlice<Element>()
+            for i in input {
+                assert(i < self.count, "index out of range")
+                result.append(self[i])
+            }
+            return result
+        }
+        
+        set {
+            for (index, i) in input.enumerated() {
+                assert(i < self.count, "index out of range")
+                self[i] = newValue[index]
+            }
+        }
+    }
+}

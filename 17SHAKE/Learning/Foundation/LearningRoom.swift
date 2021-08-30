@@ -538,6 +538,8 @@ class AssociatedTypeRoom {
     func test() {
         print(isDangerous(animal: Tiger()))
         print(isDangerous(animal: Sheep()))
+        
+        print(MutableArgumentClass.sum(input: 1,2,3,4,5))
     }
 }
 
@@ -545,7 +547,7 @@ class AssociatedTypeRoom {
  可变参数
  */
 class MutableArgumentClass{
-    func sum(input: Int...) -> Int {
+    static func sum(input: Int...) -> Int {
         return input.reduce(0,+)
     }
 }
